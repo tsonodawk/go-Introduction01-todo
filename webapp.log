@@ -1,0 +1,1729 @@
+2023/09/21 17:36:08 main.go:15: test
+2023/09/22 14:28:24 server.go:3214: http: panic serving [::1]:52628: template: layout.html:1: function "difine" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000098300?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e000}, {0x130d400, 0x14063d0}, {0xc0000ddaa0?, 0x2, 0xc000098270?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e000?}, 0xc0000ddb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e000}, 0xc0000e4100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009cf90?}, {0x1409f90?, 0xc00018e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa000, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:28:25 server.go:3214: http: panic serving [::1]:52629: template: layout.html:1: function "difine" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc0000983c0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e1c0}, {0x130d400, 0x14063d0}, {0xc000065aa0?, 0x2, 0xc000098330?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e1c0?}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e1c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e1c0}, 0xc00010e000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000108090?}, {0x1409f90?, 0xc00018e1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00010a000, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:28:25 server.go:3214: http: panic serving [::1]:52630: template: layout.html:1: function "difine" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000098480?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e380}, {0x130d400, 0x14063d0}, {0xc00021aaa0?, 0x2, 0xc0000983f0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e380?}, 0xc00021ab18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e380?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e380}, 0xc00022a000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x1409f90?, 0xc00018e380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:28:25 server.go:3214: http: panic serving [::1]:52631: template: layout.html:1: function "difine" not defined
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000098550?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e540}, {0x130d400, 0x14063d0}, {0xc00021aaa0?, 0x2, 0xc0000984c0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e540?}, 0xc00021ab18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e540?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e540}, 0xc0000e4200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009d6e0?}, {0x1409f90?, 0xc00018e540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa3f0, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:28:30 server.go:3214: http: panic serving [::1]:52633: template: layout.html:1: function "difine" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000098630?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e700}, {0x130d400, 0x14063d0}, {0xc000065aa0?, 0x2, 0xc0000985a0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e700?}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e700?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e700}, 0xc0000e4400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009da40?}, {0x1409f90?, 0xc00018e700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa5a0, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:00 server.go:3214: http: panic serving [::1]:52634: template: layout.html:1: function "difine" not defined
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00029a0a0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00029e000}, {0x130d400, 0x14063d0}, {0xc00021aaa0?, 0x2, 0xc00029a010?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00029e000?}, 0xc00021ab18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00029e000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00029e000}, 0xc0000e4300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009d9e0?}, {0x1409f90?, 0xc00029e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa630, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:00 server.go:3214: http: panic serving [::1]:52640: template: layout.html:1: function "difine" not defined
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00029a160?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00029e1c0}, {0x130d400, 0x14063d0}, {0xc000065aa0?, 0x2, 0xc00029a0d0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00029e1c0?}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00029e1c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00029e1c0}, 0xc0000e4500)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009dce0?}, {0x1409f90?, 0xc00029e1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa7e0, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:00 server.go:3214: http: panic serving [::1]:52641: template: layout.html:1: function "difine" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000098710?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018e8c0}, {0x130d400, 0x14063d0}, {0xc000060aa0?, 0x2, 0xc000098680?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018e8c0?}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018e8c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018e8c0}, 0xc0000e4600)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009dda0?}, {0x1409f90?, 0xc00018e8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa870, {0x140a738, 0xc00009cea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:30 server.go:3214: http: panic serving [::1]:52648: template: layout.html:1: function "difine" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00018e0b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001b8000}, {0x130d400, 0x14063d0}, {0xc000145aa0?, 0x2, 0xc00018e020?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001b8000?}, 0xc000145b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001b8000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001b8000}, 0xc000196000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00018a030?}, {0x1409f90?, 0xc0001b8000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00016a000, {0x140a738, 0xc000104ea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:34 server.go:3214: http: panic serving [::1]:52649: template: layout.html:1: function "difine" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00018e180?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001b81c0}, {0x130d400, 0x14063d0}, {0xc000060aa0?, 0x2, 0xc00018e0f0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001b81c0?}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001b81c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001b81c0}, 0xc000152100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000104ff0?}, {0x1409f90?, 0xc0001b81c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00016a090, {0x140a738, 0xc000104ea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:34 server.go:3214: http: panic serving [::1]:52651: template: layout.html:1: function "difine" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00018e240?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001b8380}, {0x130d400, 0x14063d0}, {0xc000184aa0?, 0x2, 0xc00018e1b0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001b8380?}, 0xc000184b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001b8380?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001b8380}, 0xc000196100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00018a330?}, {0x1409f90?, 0xc0001b8380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000198120, {0x140a738, 0xc000104ea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:29:34 server.go:3214: http: panic serving [::1]:52652: template: layout.html:1: function "difine" not defined
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00018e310?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001b8540}, {0x130d400, 0x14063d0}, {0xc000184aa0?, 0x2, 0xc00018e280?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001b8540?}, 0xc000184b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001b8540?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001b8540}, 0xc000196200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00018a840?}, {0x1409f90?, 0xc0001b8540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001983f0, {0x140a738, 0xc000104ea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:30:34 server.go:3214: http: panic serving [::1]:52657: template: layout.html:1: function "difine" not defined
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00018e3e0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001b8700}, {0x130d400, 0x14063d0}, {0xc000184aa0?, 0x2, 0xc00018e350?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001b8700?}, 0xc000184b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001b8700?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001b8700}, 0xc000196300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00018aae0?}, {0x1409f90?, 0xc0001b8700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001985a0, {0x140a738, 0xc000104ea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:32:47 server.go:3214: http: panic serving [::1]:52679: template: layout.html:1: function "difine" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00009c0b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0000c4000}, {0x130d400, 0x14063d0}, {0xc00012baa0?, 0x2, 0xc00009c020?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0000c4000?}, 0xc00012bb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0000c4000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0000c4000}, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000098030?}, {0x1409f90?, 0xc0000c4000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00014c000, {0x140a738, 0xc00007eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:33:46 server.go:3214: http: panic serving [::1]:52702: template: layout.html:1: function "difine" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc0000940b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0000bc000}, {0x130d400, 0x14063d0}, {0xc000133aa0?, 0x2, 0xc000094020?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0000bc000?}, 0xc000133b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0000bc000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0000bc000}, 0xc00009c000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000090030?}, {0x1409f90?, 0xc0000bc000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000154000, {0x140a738, 0xc00007eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:33:49 server.go:3214: http: panic serving [::1]:52703: template: layout.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00019a0a0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00019e000}, {0x130d400, 0x14063d0}, {0xc000065aa0?, 0x2, 0xc00019a010?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00019e000?}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00019e000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00019e000}, 0xc00013e100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007eff0?}, {0x1409f90?, 0xc00019e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000154090, {0x140a738, 0xc00007eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:33:49 server.go:3214: http: panic serving [::1]:52704: template: layout.html:1: function "difine" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00019a160?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00019e1c0}, {0x130d400, 0x14063d0}, {0xc000060aa0?, 0x2, 0xc00019a0d0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00019e1c0?}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00019e1c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00019e1c0}, 0xc00009c100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000090330?}, {0x1409f90?, 0xc00019e1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009e120, {0x140a738, 0xc00007eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:33:49 server.go:3214: http: panic serving [::1]:52705: template: layout.html:1: function "difine" not defined
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00019a230?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00019e380}, {0x130d400, 0x14063d0}, {0xc000060aa0?, 0x2, 0xc00019a1a0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00019e380?}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00019e380?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00019e380}, 0xc0001f0000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001864e0?}, {0x1409f90?, 0xc00019e380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000182240, {0x140a738, 0xc00007eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:36:28 server.go:3214: http: panic serving 127.0.0.1:52731: template: layout.html:1: function "difine" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000016110?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001100e0}, {0x130d400, 0x14063d0}, {0xc0000d7aa0?, 0x2, 0xc000016080?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001100e0?}, 0xc0000d7b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001100e0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001100e0}, 0xc00010c000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c030?}, {0x1409f90?, 0xc0001100e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa000, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:36:29 server.go:3214: http: panic serving 127.0.0.1:52734: template: layout.html:1: function "difine" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc0000161f0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc0001102a0}, {0x130d400, 0x14063d0}, {0xc000060aa0?, 0x2, 0xc000016160?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc0001102a0?}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc0001102a0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc0001102a0}, 0xc00010c100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c3c0?}, {0x1409f90?, 0xc0001102a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00010e120, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:36:34 server.go:3214: http: panic serving 127.0.0.1:52735: template: layout.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc0000162b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc000110460}, {0x130d400, 0x14063d0}, {0xc000065aa0?, 0x2, 0xc000016220?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc000110460?}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc000110460?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc000110460}, 0xc00010c200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c480?}, {0x1409f90?, 0xc000110460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00010e1b0, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:36:34 server.go:3214: http: panic serving 127.0.0.1:52736: template: layout.html:1: function "difine" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc000016370?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc000110620}, {0x130d400, 0x14063d0}, {0xc000061aa0?, 0x2, 0xc0000162e0?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc000110620?}, 0xc000061b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc000110620?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc000110620}, 0xc0000e4200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009f0e0?}, {0x1409f90?, 0xc000110620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa120, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:36:34 server.go:3214: http: panic serving 127.0.0.1:52737: template: layout.html:1: function "difine" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00009a310?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018a000}, {0x130d400, 0x14063d0}, {0xc000062aa0?, 0x2, 0xc00009a280?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018a000?}, 0xc000062b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018a000?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018a000}, 0xc0000e4300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009f1d0?}, {0x1409f90?, 0xc00018a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fa1b0, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 14:37:04 server.go:3214: http: panic serving 127.0.0.1:52757: template: layout.html:1: function "difine" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x1320d00?, 0xc00009a3e0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+introduction/todoApp/app/controllers.generateHTML({0x1409f90?, 0xc00018a1c0}, {0x130d400, 0x14063d0}, {0xc000062aa0?, 0x2, 0xc00009a350?})
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:15 +0x21f
+introduction/todoApp/app/controllers.top({0x1409f90?, 0xc00018a1c0?}, 0xc000062b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x1043860?, {0x1409f90?, 0xc00018a1c0?}, 0x128c93a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x165d280?, {0x1409f90, 0xc00018a1c0}, 0xc0000e4400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009f410?}, {0x1409f90?, 0xc00018a1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x140a738, 0xc00009eea0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:35 server.go:3214: http: panic serving 127.0.0.1:55087: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000402200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056dc08, 0xc0004201c0}, 0xc00012bb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc0004201c0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc0004201c0}, 0xc000402200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009c030?}, {0x10056dc08?, 0xc0004201c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00014c090, {0x10056e3c8, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:35 server.go:3214: http: panic serving 127.0.0.1:55088: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000402400)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056dc08, 0xc000420380}, 0xc00029fb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000420380?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000420380}, 0xc000402400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f260?}, {0x10056dc08?, 0xc000420380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00014c120, {0x10056e3c8, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:35 server.go:3214: http: panic serving 127.0.0.1:55089: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000402600)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056dc08, 0xc000420540}, 0xc00012db18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000420540?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000420540}, 0xc000402600)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009c6f0?}, {0x10056dc08?, 0xc000420540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000aa120, {0x10056e3c8, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:35 server.go:3214: http: panic serving 127.0.0.1:55662: runtime error: invalid memory address or nil pointer dereference
+goroutine 103 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000402800)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056dc08, 0xc000420700}, 0xc000514b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000420700?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000420700}, 0xc000402800)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000400840?}, {0x10056dc08?, 0xc000420700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000406360, {0x10056e3c8, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:36 server.go:3214: http: panic serving 127.0.0.1:55671: runtime error: invalid memory address or nil pointer dereference
+goroutine 105 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000402a00)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056dc08, 0xc0004208c0}, 0xc000514b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc0004208c0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc0004208c0}, 0xc000402a00)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000400990?}, {0x10056dc08?, 0xc0004208c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000406510, {0x10056e3c8, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:46 server.go:3214: http: panic serving 127.0.0.1:55721: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc0001860e0}, 0xc0000dfb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc0001860e0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc0001860e0}, 0xc000182000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x10056dc08?, 0xc0001860e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102090, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:47 server.go:3214: http: panic serving 127.0.0.1:55722: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc000124000}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000124000?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000124000}, 0xc0000ec100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a5260?}, {0x10056dc08?, 0xc000124000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102120, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:47 server.go:3214: http: panic serving 127.0.0.1:55727: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc0001241c0}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc0001241c0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc0001241c0}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e1e0?}, {0x10056dc08?, 0xc0001241c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000184120, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:47 server.go:3214: http: panic serving 127.0.0.1:55728: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc000124380}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000124380?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000124380}, 0xc0000ec200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a5500?}, {0x10056dc08?, 0xc000124380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001023f0, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:29:52 server.go:3214: http: panic serving 127.0.0.1:55749: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc0001862a0}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc0001862a0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc0001862a0}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e2a0?}, {0x10056dc08?, 0xc0001862a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001841b0, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:30:22 server.go:3214: http: panic serving 127.0.0.1:55750: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000216000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc000186460}, 0xc000204b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000186460?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000186460}, 0xc000216000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00020a030?}, {0x10056dc08?, 0xc000186460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001025a0, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:30:22 server.go:3214: http: panic serving 127.0.0.1:55873: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000216100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc000186620}, 0xc000205b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc000186620?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc000186620}, 0xc000216100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00020a120?}, {0x10056dc08?, 0xc000186620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00021e000, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:30:22 server.go:3214: http: panic serving 127.0.0.1:55874: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00029e000}, 0xc000205b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00029e000?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00029e000}, 0xc000182300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e5a0?}, {0x10056dc08?, 0xc00029e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001845a0, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:31:22 server.go:3214: http: panic serving 127.0.0.1:56124: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0002da100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00029e1c0}, 0xc000200b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00029e1c0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00029e1c0}, 0xc0002da100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002861e0?}, {0x10056dc08?, 0xc00029e1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000282120, {0x10056e3c8, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:39:40 server.go:3214: http: panic serving [::1]:57719: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ee100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00011c0e0}, 0xc0000e7b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00011c0e0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00011c0e0}, 0xc0000ee100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000ab200?}, {0x10056dc08?, 0xc00011c0e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fc120, {0x10056e3c8, 0xc0000ab110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:39:41 server.go:3214: http: panic serving [::1]:57720: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00018c000}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00018c000?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00018c000}, 0xc000182000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c030?}, {0x10056dc08?, 0xc00018c000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fc2d0, {0x10056e3c8, 0xc0000ab110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:39:41 server.go:3214: http: panic serving [::1]:57721: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ee200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00018c1c0}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00018c1c0?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00018c1c0}, 0xc0000ee200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000ab410?}, {0x10056dc08?, 0xc00018c1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000fc360, {0x10056e3c8, 0xc0000ab110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:39:41 server.go:3214: http: panic serving [::1]:57722: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00018c380}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00018c380?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00018c380}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c2d0?}, {0x10056dc08?, 0xc00018c380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000184240, {0x10056e3c8, 0xc0000ab110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:39:46 server.go:3214: http: panic serving [::1]:57723: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d120?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000182200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056dc08, 0xc00018c540}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100046f80?, {0x10056dc08?, 0xc00018c540?}, 0x1002e779a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056dc08, 0xc00018c540}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007c420?}, {0x10056dc08?, 0xc00018c540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001843f0, {0x10056e3c8, 0xc0000ab110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:16 server.go:3214: http: panic serving [::1]:57838: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000136100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c000}, 0xc000131b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c000}, 0xc000136100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f200?}, {0x10056de88?, 0xc00016c000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000146120, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:18 server.go:3214: http: panic serving [::1]:57839: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00019a000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c1c0}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c1c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c1c0}, 0xc00019a000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000184090?}, {0x10056de88?, 0xc00016c1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:18 server.go:3214: http: panic serving [::1]:57848: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000136200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c380}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c380?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c380}, 0xc000136200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f3b0?}, {0x10056de88?, 0xc00016c380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001462d0, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:18 server.go:3214: http: panic serving [::1]:57849: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000136300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c540}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c540?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c540}, 0xc000136300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f620?}, {0x10056de88?, 0xc00016c540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001465a0, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:21 server.go:3214: http: panic serving [::1]:57858: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000aa000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c700}, 0xc00009eb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c700?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c700}, 0xc0000aa000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a4030?}, {0x10056de88?, 0xc00016c700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000146750, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:21 server.go:3214: http: panic serving [::1]:57859: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000136400)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00016c8c0}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00016c8c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00016c8c0}, 0xc000136400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f7d0?}, {0x10056de88?, 0xc00016c8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001467e0, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:21 server.go:3214: http: panic serving [::1]:57860: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00019a100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc0001ae000}, 0xc000061b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001ae000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001ae000}, 0xc00019a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000184120?}, {0x10056de88?, 0xc0001ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000146ab0, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:45 server.go:3214: http: panic serving [::1]:57965: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000184000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc000194000}, 0xc0000dfb18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000194000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000194000}, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x10056de88?, 0xc000194000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102090, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:48 server.go:3214: http: panic serving [::1]:57966: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc00021e000}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00021e000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00021e000}, 0xc0000ec100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a5260?}, {0x10056de88?, 0xc00021e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102120, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:48 server.go:3214: http: panic serving [::1]:57975: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000184100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc000124000}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000124000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000124000}, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e1e0?}, {0x10056de88?, 0xc000124000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000186120, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:40:48 server.go:3214: http: panic serving [::1]:57976: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc0001241c0}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001241c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001241c0}, 0xc0000ec300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a53e0?}, {0x10056de88?, 0xc0001241c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001022d0, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:17 server.go:3214: http: panic serving [::1]:58096: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec500)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc000124380}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000124380?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000124380}, 0xc0000ec500)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a5530?}, {0x10056de88?, 0xc000124380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102480, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:17 server.go:3214: http: panic serving [::1]:58097: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000ec600)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc000124540}, 0xc000061b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000124540?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000124540}, 0xc0000ec600)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000a55f0?}, {0x10056de88?, 0xc000124540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000102510, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:17 server.go:3214: http: panic serving [::1]:58098: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000184200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.top({0x10056de88, 0xc0001941c0}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001941c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001941c0}, 0xc000184200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007e2a0?}, {0x10056de88?, 0xc0001941c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001861b0, {0x10056e648, 0xc0000a5110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:49 server.go:3214: http: panic serving [::1]:58256: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc000176000}, 0xc000139b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176000}, 0xc00013e200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b2f0?}, {0x10056de88?, 0xc000176000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152090, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:50 server.go:3214: http: panic serving [::1]:58257: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc0001761c0}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001761c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001761c0}, 0xc00013e100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b260?}, {0x10056de88?, 0xc0001761c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152120, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:50 server.go:3214: http: panic serving [::1]:58262: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000aa000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc000176380}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176380?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176380}, 0xc0000aa000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009e090?}, {0x10056de88?, 0xc000176380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a2000, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:50 server.go:3214: http: panic serving [::1]:58263: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc000176540}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176540?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176540}, 0xc00013e300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b650?}, {0x10056de88?, 0xc000176540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152510, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:50 server.go:3214: http: panic serving [::1]:58268: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e400)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc000176700}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176700?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176700}, 0xc00013e400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b7a0?}, {0x10056de88?, 0xc000176700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001526c0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:56 server.go:3214: http: panic serving [::1]:58269: runtime error: invalid memory address or nil pointer dereference
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e500)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc0000bc000}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc000}, 0xc00013e500)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b860?}, {0x10056de88?, 0xc0000bc000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152750, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:56 server.go:3214: http: panic serving [::1]:58290: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e600)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc0000bc1c0}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc1c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc1c0}, 0xc00013e600)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007b9b0?}, {0x10056de88?, 0xc0000bc1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152900, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:56 server.go:3214: http: panic serving [::1]:58291: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000aa100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.login({0x10056de88, 0xc0000bc380}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:41 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc380?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc380}, 0xc0000aa100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009e300?}, {0x10056de88?, 0xc0000bc380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a22d0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:56 server.go:3214: http: panic serving [::1]:58296: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x736f686c61636f6c?, 0x70756e6769732f74?}, 0xc0000aa200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.signup({0x10056de88, 0xc0002840e0}, 0xc0000aa200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:11 +0x65
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0002840e0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0002840e0}, 0xc0000aa200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009e3f0?}, {0x10056de88?, 0xc0002840e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152990, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:57 server.go:3214: http: panic serving [::1]:58297: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x736f686c61636f6c?, 0x70756e6769732f74?}, 0xc000210000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.signup({0x10056de88, 0xc0000bc540}, 0xc000210000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:11 +0x65
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc540?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc540}, 0xc000210000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00020a030?}, {0x10056de88?, 0xc0000bc540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152a20, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:57 server.go:3214: http: panic serving [::1]:58302: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x736f686c61636f6c?, 0x70756e6769732f74?}, 0xc0002d8000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.signup({0x10056de88, 0xc0000bc700}, 0xc0002d8000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:11 +0x65
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc700?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc700}, 0xc0002d8000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000286120?}, {0x10056de88?, 0xc0000bc700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000282120, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:41:57 server.go:3214: http: panic serving [::1]:58303: runtime error: invalid memory address or nil pointer dereference
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x736f686c61636f6c?, 0x70756e6769732f74?}, 0xc0000aa300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.signup({0x10056de88, 0xc0000bc8c0}, 0xc0000aa300)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_auth.go:11 +0x65
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc8c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc8c0}, 0xc0000aa300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009e5d0?}, {0x10056de88?, 0xc0000bc8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a26c0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:01 server.go:3214: http: panic serving [::1]:58320: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e700)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc0001769a0}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001769a0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001769a0}, 0xc00013e700)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007bad0?}, {0x10056de88?, 0xc0001769a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a2870, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:02 server.go:3214: http: panic serving [::1]:58321: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000aa400)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc000176b60}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176b60?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176b60}, 0xc0000aa400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00009e780?}, {0x10056de88?, 0xc000176b60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a2900, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:02 server.go:3214: http: panic serving [::1]:58326: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e800)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc000176d20}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176d20?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176d20}, 0xc00013e800)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007bc20?}, {0x10056de88?, 0xc000176d20?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152bd0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:02 server.go:3214: http: panic serving [::1]:58327: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e900)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc000176ee0}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000176ee0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000176ee0}, 0xc00013e900)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007be00?}, {0x10056de88?, 0xc000176ee0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000152ea0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:07 server.go:3214: http: panic serving [::1]:58348: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013eb00)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc0001770a0}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0001770a0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0001770a0}, 0xc00013eb00)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001fc030?}, {0x10056de88?, 0xc0001770a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000153050, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:37 server.go:3214: http: panic serving [::1]:58349: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013ea00)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc00022a000}, 0xc000066b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00022a000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00022a000}, 0xc00013ea00)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007bfb0?}, {0x10056de88?, 0xc00022a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001530e0, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:37 server.go:3214: http: panic serving [::1]:58471: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013ec00)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc00022a1c0}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00022a1c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00022a1c0}, 0xc00013ec00)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001fc180?}, {0x10056de88?, 0xc00022a1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000153290, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:42:37 server.go:3214: http: panic serving [::1]:58472: runtime error: invalid memory address or nil pointer dereference
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc000210100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc00022a380}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00022a380?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00022a380}, 0xc000210100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00020a2a0?}, {0x10056de88?, 0xc00022a380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000216240, {0x10056e648, 0xc00007b110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:45:13 server.go:3214: http: panic serving [::1]:59120: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc000174000}, 0xc000139b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc000174000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc000174000}, 0xc00013e100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f200?}, {0x10056de88?, 0xc000174000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000154090, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:45:14 server.go:3214: http: panic serving [::1]:59121: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000a8000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc00021e000}, 0xc000060b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc00021e000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc00021e000}, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000096090?}, {0x10056de88?, 0xc00021e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009a000, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:45:14 server.go:3214: http: panic serving [::1]:59126: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc00013e200)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc0000bc000}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc000?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc000}, 0xc00013e200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00007f3b0?}, {0x10056de88?, 0xc0000bc000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000154240, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:45:14 server.go:3214: http: panic serving [::1]:59127: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10047d480?, 0x1007bdc10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+introduction/todoApp/app/controllers.session({0x0?, 0x0?}, 0xc0000a8100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x7e
+introduction/todoApp/app/controllers.index({0x10056de88, 0xc0000bc1c0}, 0xc000065b18?)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:18 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100047640?, {0x10056de88?, 0xc0000bc1c0?}, 0x1002e7d7a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1007fd7c0?, {0x10056de88, 0xc0000bc1c0}, 0xc0000a8100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000096210?}, {0x10056de88?, 0xc0000bc1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009a1b0, {0x10056e648, 0xc00007f110})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2023/09/22 16:46:22 server.go:3214: http: panic serving [::1]:59244: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0x13d
+panic({0x1006a8f00?, 0x1009a9cd0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x290
+introduction/todoApp/app/controllers.session({0x1007641f0, 0xc0000aa0e0}, 0xc0000a6000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x117
+introduction/todoApp/app/controllers.top({0x1007641f0, 0xc0000aa0e0}, 0xc0000a6000)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x85
+net/http.HandlerFunc.ServeHTTP(0x100738fd8, {0x1007641f0, 0xc0000aa0e0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2136 +0x3a
+net/http.(*ServeMux).ServeHTTP(0x1009baee0, {0x1007641f0, 0xc0000aa0e0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2514 +0x194
+net/http.serverHandler.ServeHTTP({0xc00016c000}, {0x1007641f0, 0xc0000aa0e0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2938 +0x257
+net/http.(*conn).serve(0xc000156090, {0x1007649e8, 0xc00009e000})
+	/usr/local/go/src/net/http/server.go:2009 +0x1a39
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0xa25
+2023/09/22 16:47:25 server.go:3214: http: panic serving [::1]:59245: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0x13d
+panic({0x1006a8f00?, 0x1009a9cd0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x290
+introduction/todoApp/app/controllers.session({0x1007641f0, 0xc000174000}, 0xc00013a100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:24 +0x117
+introduction/todoApp/app/controllers.top({0x1007641f0, 0xc000174000}, 0xc00013a100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x85
+net/http.HandlerFunc.ServeHTTP(0x100738fd8, {0x1007641f0, 0xc000174000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2136 +0x3a
+net/http.(*ServeMux).ServeHTTP(0x1009baee0, {0x1007641f0, 0xc000174000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x194
+net/http.serverHandler.ServeHTTP({0xc00016c000}, {0x1007641f0, 0xc000174000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2938 +0x257
+net/http.(*conn).serve(0xc000156120, {0x1007649e8, 0xc00007c2d0})
+	/usr/local/go/src/net/http/server.go:2009 +0x1a39
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0xa25
+2023/09/22 16:52:16 server.go:3214: http: panic serving [::1]:61047: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0x13d
+panic({0x1006a8f00?, 0x1009a9cd0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x290
+introduction/todoApp/app/controllers.session({0x1007641f0, 0xc000178000}, 0xc00013a100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/server.go:23 +0xea
+introduction/todoApp/app/controllers.top({0x1007641f0, 0xc000178000}, 0xc00013a100)
+	/Users/flat9th/GitRepos/github-tsonodawk/go-tutorials-udemy/go-Introduction01-todo/todo_app/app/controllers/route_main.go:8 +0x85
+net/http.HandlerFunc.ServeHTTP(0x100738fd8, {0x1007641f0, 0xc000178000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2136 +0x3a
+net/http.(*ServeMux).ServeHTTP(0x1009baee0, {0x1007641f0, 0xc000178000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x194
+net/http.serverHandler.ServeHTTP({0xc00016c000}, {0x1007641f0, 0xc000178000}, 0xc00013a100)
+	/usr/local/go/src/net/http/server.go:2938 +0x257
+net/http.(*conn).serve(0xc000156090, {0x1007649e8, 0xc00007c2d0})
+	/usr/local/go/src/net/http/server.go:2009 +0x1a39
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0xa25
